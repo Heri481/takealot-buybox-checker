@@ -1,0 +1,16 @@
+{
+  "name": "takealot-buybox-checker",
+  "version": "1.0.0",
+  "description": "Checks if your offer is winning the Buy Box on Takealot using Puppeteer.",
+  "main": "check_buybox.js",
+  "scripts": {
+    "start": "node check_buybox.js",
+    "check": "node check_buybox.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "puppeteer": "^22.15.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}
