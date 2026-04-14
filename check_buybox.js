@@ -1,3 +1,15 @@
+// SIMPLE WEB SERVER - Add this at the very top
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Takealot Buy Box Checker is running! 🚀');
+});
+
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+    console.log(`✅ Server running on port ${PORT}`);
+});
 const fs = require('fs');
 const path = require('path');
 const puppeteer = require('puppeteer-extra');
